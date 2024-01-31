@@ -3,6 +3,9 @@ name: run app.py
 on:
   schedule:
     - cron: '0 0 * * 1' # At 00:00 on Monday
+  push:
+    branches:
+      - lab4
   workflow_dispatch:
 
 jobs:
