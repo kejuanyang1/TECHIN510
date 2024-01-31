@@ -3,6 +3,9 @@ name: Run hello.py Script
 on:
   schedule:
     - cron: '*/30 * * * *'  # At every 30th minute
+  push:
+    branches:
+      - lab4
   workflow_dispatch:
 
 jobs:
