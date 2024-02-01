@@ -28,4 +28,4 @@ streamlit run app.py
 - Moreover, I praticed how to implement create, read, and update functions in todo list application using SQL queries.
 
 ## Questions
-- I use checkbox element to display the `is_done` state of a todo item. However, I found that only after I clicked it twice, the text display would change. I'm not sure why it happens. 
+- I use checkbox element to display the `is_done` state of a todo item. However, I found that only after I clicked it twice, the display would change. I'm not sure why it happens. 

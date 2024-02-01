@@ -17,13 +17,13 @@ def display_todos():
         - **Created At:** {created_at.strftime('%Y-%m-%d %H:%M:%S')}
         - **Created By:** {created_by}
         - **Category:** {category}
-        - **Done:** {'Yes' if is_done else 'No'}
         """, unsafe_allow_html=True)
 
-        if st.checkbox('Done', key=todo[0], value=is_done):
-            update_task_completion(todo[0], True)
-        else:
-            update_task_completion(todo[0], False)
+        # Use a separate variable to hold the checkbox value
+        checkbox_value = st.checkbox('Done', key=todo_id, value=is_done)
+        
+        # Update the task completion based on the checkbox value
+        update_task_completion(todo_id, checkbox_value)
             
 def main():
     init_db()
